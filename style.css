@@ -2,7 +2,9 @@ html {
     font-family: monospace;
     background: rgb(229, 229, 229);
 }
-
+header {
+    position: sticky;
+}
 .AuthorName {
     color: rgb(0,0,3);
     font-size: 40px;
@@ -12,7 +14,6 @@ html {
 body .navigation {
     font-size: 20px;
 }
-
 img {
     box-shadow: 3px 3px 3px 3px goldenrod;
 }
@@ -26,7 +27,67 @@ a {
     font-weight:bold;
     text-decoration:none;
 }
-
 footer {
     text-align: center;
+}
+.images {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 100%;
+}
+.image {
+    width: 34%;
+}
+@media screen and (orientation: portrait) {
+    html {
+        background: rgb(0, 0, 0);
+    }
+}
+
+ul a:nth-child(even) {
+    color: black;
+}
+
+table {
+    display: grid;
+    border-collapse: collapse;
+    min-width: 100%;
+    grid-template-columns:
+    minmax(30px, 1fr)
+    minmax(30px, 1fr)
+}
+
+thead,
+tbody,
+tr {
+    display: contents;
+}
+
+th,
+td {
+    padding: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+th {
+    position: sticky;
+    top: 0;
+    background: #e0a81a;
+    text-align: left;
+    font-weight: normal;
+    font-size: 1.1rem;
+    color: white;
+}
+
+td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #410202;
+}
+
+tr:nth-child(odd) td {
+    background: #f8f6ff;
 }
