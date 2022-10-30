@@ -1,0 +1,32 @@
+html {
+    font-family: monospace;
+    background: rgb(229, 229, 229);
+}
+
+.AuthorName {
+    color: rgb(0,0,3);
+    font-size: 40px;
+    margin-left: 40px;
+    text-transform: uppercase;
+}
+body .navigation {
+    font-size: 20px;
+}
+
+img {
+    box-shadow: 3px 3px 3px 3px goldenrod;
+}
+nav ul a{
+    padding-left: 3px;
+}
+a {
+    color: rgb(77,147, 252);
+    display: inline-block;
+    transition: .3s;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+footer {
+    text-align: center;
+}
