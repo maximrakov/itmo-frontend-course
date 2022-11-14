@@ -1,3 +1,4 @@
+
 html {
     font-family: monospace;
     background: rgb(229, 229, 229);
@@ -20,6 +21,7 @@ img {
 }
 nav ul a{
     padding-left: 3px;
+    font-family:serif
 }
 a {
     color: rgb(77,147, 252);
