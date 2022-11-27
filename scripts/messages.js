@@ -15,6 +15,5 @@ function onClick(form) {
     window.addEventListener("load", () => {
         const blockOfMessages = document.querySelector(".messages");
         blockOfMessages.innerHTML = localStorage.getItem('messages');
-
     })
 })()

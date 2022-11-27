@@ -16,7 +16,7 @@ header {
 body .navigation {
     font-size: 20px;
 }
-img {
+.images img {
     box-shadow: 3px 3px 3px 3px goldenrod;
 }
 nav ul a{
