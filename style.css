@@ -90,7 +90,10 @@ td {
     padding-bottom: 10px;
     color: #410202;
 }
-
+.messageSender a{
+    font-size: 30px;
+    color: goldenrod;
+}
 tr:nth-child(odd) td {
     background: #f8f6ff;
 }

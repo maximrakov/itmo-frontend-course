@@ -21,6 +21,31 @@
         var page = path.split("/").pop();
         page = page.slice(0,-5)
         const currentPage = document.getElementById(page);
+        console.log(page);
+        if(page == 'aboutMe') {
+            iziToast.show({
+                title: '',
+                message: 'This is information about me'
+            });
+        }
+        if(page == 'contacts') {
+            iziToast.show({
+                title: '',
+                message: 'In this page you can find my contact'
+            });
+        }
+        if(page == 'myProjects') {
+            iziToast.show({
+                title: '',
+                message: 'There are my projects'
+            });
+        }
+        if(page === '' || page === 'index') {
+            iziToast.show({
+                title: 'Hello',
+                message: 'Welcome to my site!'
+            });
+        }
         currentPage.style.color='green';
     })
 })()
