@@ -1,0 +1,138 @@
+
+html {
+    font-family: monospace;
+    background: rgb(229, 229, 229);
+}
+header {
+    /*position: sticky;*/
+    top: 20px;
+}
+.AuthorName {
+    color: rgb(0,0,3);
+    font-size: 40px;
+    margin-left: 40px;
+    text-transform: uppercase;
+}
+body .navigation {
+    font-size: 20px;
+}
+.images img {
+    box-shadow: 3px 3px 3px 3px goldenrod;
+}
+nav ul a{
+    padding-left: 3px;
+    font-family:serif
+}
+a {
+    color: rgb(77,147, 252);
+    display: inline-block;
+    transition: .3s;
+    font-weight:bold;
+    text-decoration:none;
+}
+footer {
+    padding-top: 10rem;
+    text-align: center;
+}
+.images {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 100%;
+}
+.images2 {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 100%;
+}
+.image {
+    width: 34%;
+}
+@media screen and (orientation: portrait) {
+    html {
+        background: rgb(0, 0, 0);
+    }
+}
+
+ul a:nth-child(even) {
+    color: black;
+}
+
+table {
+    display: grid;
+    border-collapse: collapse;
+    min-width: 100%;
+    grid-template-columns:
+    minmax(30px, 1fr)
+    minmax(30px, 1fr)
+}
+
+thead,
+tbody,
+tr {
+    display: contents;
+}
+
+th,
+td {
+    padding: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+th {
+    position: sticky;
+    top: 0;
+    background: #e0a81a;
+    text-align: left;
+    font-weight: normal;
+    font-size: 1.1rem;
+    color: white;
+}
+
+td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #410202;
+}
+.messageSender a{
+    font-size: 30px;
+    color: goldenrod;
+}
+tr:nth-child(odd) td {
+    background: #f8f6ff;
+}
+aside{
+    float: right;
+    width: 20rem;
+}
+.images {
+    padding-left: 15rem;
+}
+.images2 {
+    padding-top: 5rem;
+    padding-left: 15rem;
+}
+.images2 img {
+    box-shadow: 3px 3px 3px 3px goldenrod;
+}
+header {
+    position: sticky;
+    padding-left: 7.5rem;
+}
+nav {
+    /*padding-left: 7.5rem;*/
+}
+
+.headroom {
+    will-change: transform;
+    transition: transform 200ms linear;
+}
+.headroom--pinned {
+    transform: translateY(0%);
+}
+.headroom--unpinned {
+    transform: translateY(-200%);
+}

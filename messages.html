@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Rakov Maxim</title>
+    <link href="style.css" rel="stylesheet" >
+    <script type="text/javascript" src="scripts/preprocessing.js"></script>
+    <script type="text/javascript" src="scripts/messages.js"></script>
+    <script type="text/javascript" src="scripts/fetcher.js"></script>
+    <script src="scripts/headroom.js" type="text/javascript"></script>
+</head>
+<body>
+<header>
+    <p1 class="AuthorName">Rakov Maxim</p1>
+</header>
+<nav class="navigation">
+    <ul>
+        <a id="aboutMe" href ="aboutMe.html">About me</a>
+        <a id="contacts" href="contacts.html">Contacts</a>
+        <a id="myProjects" href="myProjects.html">My projects</a>
+    </ul>
+</nav>
+<form id="message_form" onsubmit="onSubmit(this); return false;">
+    <textarea class="messageBody" name="comment" form="message_form"></textarea>
+</form>
+<button class="messageSender"  form="message_form">Submit</button>
+<button class="clear"  form="message_form" onclick="onClick(this); return false">Clear</button>
+<div class="messages">
+</div>
+<div class="preloader">
+    <img src="resources/preloader.gif">
+</div>
+<div class="loadtime">
+</div>
+</body>
+</html>
