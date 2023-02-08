@@ -2,7 +2,6 @@
 (() => {
     const start = Date.now()
     window.addEventListener("load", () => {
-        // Достаем header и инициализируем желаемое поведение на нем с помощью модуля
         const header = document.querySelector("header");
         const headroom = new Headroom(header);
         headroom.init();
@@ -10,7 +9,7 @@
         const el = document.querySelector(".loadtime")
         el.innerText = `${finish - start} ms`
         let pages = new Map();
-        let page_names = ['aboutMe', 'contacts', 'myProjects'];
+        let page_names = ['aboutMe', 'contacts', 'myProjects', 'messages'];
         for (const element of page_names) {
             pages.set(element, document.getElementById(element));
         }
@@ -28,28 +27,30 @@
         const currentPage = document.getElementById(page);
         console.log(page);
         if(page == 'aboutMe') {
-            //вызываем метод выдающий уведомление пользователю
             iziToast.show({
                 title: '',
                 message: 'This is information about me'
             });
         }
         if(page == 'contacts') {
-            //вызываем метод выдающий уведомление пользователю
             iziToast.show({
                 title: '',
                 message: 'In this page you can find my contact'
             });
         }
         if(page == 'myProjects') {
-            //вызываем метод выдающий уведомление пользователю
             iziToast.show({
                 title: '',
                 message: 'There are my projects'
             });
         }
+        if(page == 'messages') {
+            iziToast.show({
+                title: '',
+                message: 'You can put your comments here'
+            });
+        }
         if(page === '' || page === 'index') {
-            //вызываем метод выдающий уведомление пользователю
             iziToast.show({
                 title: 'Hello',
                 message: 'Welcome to my site!'
