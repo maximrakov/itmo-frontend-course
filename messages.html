@@ -6,31 +6,38 @@
     <link href="style.css" rel="stylesheet" >
     <script type="text/javascript" src="scripts/preprocessing.js"></script>
     <script type="text/javascript" src="scripts/messages.js"></script>
-    <script type="text/javascript" src="scripts/fetcher.js"></script>
+    <link rel="stylesheet" href="ntf/dist/css/iziToast.min.css">
+    <script src="ntf/dist/js/iziToast.min.js" type="text/javascript"></script>
     <script src="scripts/headroom.js" type="text/javascript"></script>
 </head>
 <body>
 <header>
-    <p1 class="AuthorName">Rakov Maxim</p1>
+    <a href ="index.html">
+        <p1 class="AuthorName">Rakov Maxim</p1>
+    </a>
+    <nav class="main-navigation">
+        <ul>
+            <a id="aboutMe" href ="aboutMe.html">About me</a>
+            <a id="myProjects" href="myProjects.html">My projects</a>
+            <a id="contacts" href="contacts.html">Contacts</a>
+            <a id = "messages" href="messages.html">Send me a comment</a>
+        </ul>
+    </nav>
 </header>
-<nav class="navigation">
-    <ul>
-        <a id="aboutMe" href ="aboutMe.html">About me</a>
-        <a id="contacts" href="contacts.html">Contacts</a>
-        <a id="myProjects" href="myProjects.html">My projects</a>
-    </ul>
-</nav>
-<form id="message_form" onsubmit="onSubmit(this); return false;">
-    <textarea class="messageBody" name="comment" form="message_form"></textarea>
-</form>
-<button class="messageSender"  form="message_form">Submit</button>
-<button class="clear"  form="message_form" onclick="onClick(this); return false">Clear</button>
-<div class="messages">
-</div>
-<div class="preloader">
-    <img src="resources/preloader.gif">
-</div>
-<div class="loadtime">
+
+<main>
+    <form id="message_form" onsubmit="onSubmit(this); return false;">
+        <textarea class="messageBody" name="comment" form="message_form"></textarea>
+    </form>
+    <button class="button-19" role="button"  form="message_form">Submit</button>
+    <button class="button-19" role="button"  form="message_form" onclick="onClick(this); return false">Clear</button>
+    <div class="messages">
+    </div>
+    <div>
+    Tg: @asdkekkekkek
+    <div class="loadtime"/>
+    </div>
+</main>
 </div>
 </body>
 </html>

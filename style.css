@@ -1,38 +1,46 @@
-
 html {
     font-family: monospace;
-    background: rgb(229, 229, 229);
+    background-image: url("resources/black_background.jpg");
 }
 header {
-    /*position: sticky;*/
     top: 20px;
+    padding-left: 0;
 }
 .AuthorName {
-    color: rgb(0,0,3);
+    color: rgb(241, 242, 243);
     font-size: 40px;
-    margin-left: 40px;
     text-transform: uppercase;
 }
-body .navigation {
+body .main-navigation {
     font-size: 20px;
+}
+bodu .main-navigation a {
+    color: rgb(187, 187, 187);
 }
 .images img {
     box-shadow: 3px 3px 3px 3px goldenrod;
 }
+nav ul {
+    padding-inline-start: 0;
+}
 nav ul a{
-    padding-left: 3px;
+    /*padding-left: 3px;*/
     font-family:serif
 }
 a {
-    color: rgb(77,147, 252);
+    color: rgb(187, 187, 187);
     display: inline-block;
     transition: .3s;
     font-weight:bold;
     text-decoration:none;
 }
+body {
+    color: rgb(187, 187, 187);
+}
 footer {
     padding-top: 10rem;
     text-align: center;
+    /*color: rgb(187, 187, 187);*/
 }
 .images {
     display: flex;
@@ -49,57 +57,9 @@ footer {
 .image {
     width: 34%;
 }
-@media screen and (orientation: portrait) {
-    html {
-        background: rgb(0, 0, 0);
-    }
-}
 
-ul a:nth-child(even) {
-    color: black;
-}
-
-table {
-    display: grid;
-    border-collapse: collapse;
-    min-width: 100%;
-    grid-template-columns:
-    minmax(30px, 1fr)
-    minmax(30px, 1fr)
-}
-
-thead,
-tbody,
-tr {
-    display: contents;
-}
-
-th,
-td {
-    padding: 15px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
-th {
-    position: sticky;
-    top: 0;
-    background: #e0a81a;
-    text-align: left;
-    font-weight: normal;
-    font-size: 1.1rem;
-    color: white;
-}
-
-td {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: #410202;
-}
 .messageSender a{
     font-size: 30px;
-    color: goldenrod;
 }
 tr:nth-child(odd) td {
     background: #f8f6ff;
@@ -135,4 +95,93 @@ nav {
 }
 .headroom--unpinned {
     transform: translateY(-200%);
+}
+textarea {
+    width: 500px;
+    height: 100px;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: -moz-use-text-color #FFFFFF #FFFFFF -moz-use-text-color;
+    border-image: none;
+    border-radius: 6px 6px 6px 6px;
+    border-style: none solid solid none;
+    border-width: medium 1px 1px medium;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12) inset;
+    color: #555555;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 1em;
+    line-height: 1.4em;
+    padding: 5px 8px;
+    transition: background-color 0.2s ease 0s;
+}
+main {
+    text-align: center;
+    padding-top: 3rem;
+    font-family: le-monde-livre-classic-byol,serif;
+}
+textarea:focus {
+    background: none repeat scroll 0 0 #FFFFFF;
+    outline-width: 0;
+}
+
+.button-19 {
+    appearance: button;
+    background-color: #f33c3c;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: din-round,sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 13px 16px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    /*width: 100%;*/
+}
+
+.button-19:after {
+    background-clip: padding-box;
+    background-color: red;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.button-19:main,
+.button-19:focus {
+    user-select: auto;
+}
+
+.button-19:hover:not(:disabled) {
+    filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);
+}
+
+.button-19:disabled {
+    cursor: auto;
 }
